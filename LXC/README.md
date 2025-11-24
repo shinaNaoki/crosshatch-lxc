@@ -52,11 +52,11 @@ lxc.mount.entry = /dev/input dev/input none bind,optional,create=dir
 mt管理器打开/data/lxc/lxc-manager.c和/data/lxc/lxc-manager.sh，查找mirrors.tuna.tsinghua替换为mirror.nju
 
 #三.有什么用？
-![fastfetch](./LXC/fastfetch.png "祖宗之法不可变，fastfetch先")
+![fastfetch](./fastfetch.png "祖宗之法不可变，fastfetch先")
 搭建Suwayomi-server
-![Suwayomi-server](./LXC/Suwayomi1.png "Suwayomi-server")
-![Suwayomi局域网访问](./LXC/Suwayomi2.png "局域网内访问")
-![Jellyfin](./LXC/Jellyfin.png "😕")
+![Suwayomi-server](./Suwayomi1.png "Suwayomi-server")
+![Suwayomi局域网访问](./Suwayomi2.png "局域网内访问")
+![Jellyfin](./Jellyfin.png "😕")
 
 #存在的问题：
 目前(2025-11-24)，在LXC中无法正常启动Arch Linux ARM(需要你自己修改)
