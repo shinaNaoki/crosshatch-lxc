@@ -58,5 +58,6 @@ mt管理器打开/data/lxc/lxc-manager.c和/data/lxc/lxc-manager.sh，查找mirr
 ![Suwayomi局域网访问](./Suwayomi2.png "局域网内访问")
 ![Jellyfin](./Jellyfin.png "😕")
 
-# 存在的问题：
-目前(2025-11-24)，在LXC中无法正常启动Arch Linux ARM(需要你自己修改)
+# ~~存在的问题：~~
+~~目前(2025-10-15)，在LXC中无法正常启动Arch Linux ARM(需要你自己修改)~~
+
