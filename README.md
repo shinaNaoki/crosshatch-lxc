@@ -296,7 +296,7 @@ mv -f Image.lz4 kernel
 
 - 我依然建议你使用面具进行管理
 
-### 7.2 LXC（你可以选择tomxi1997大佬的lxc管理模块，或者参考视频自行**[静态编译lxc（使用musl库）](https://www.bilibili.com/video/BV1veuFzaE8N)**）
+### 7.2 LXC（你可以选择tomxi1997大佬的lxc管理模块，或者参考视频自行**[静态编译lxc（使用musl库）]**(https://www.bilibili.com/video/BV1veuFzaE8N)）
 
 - 下载模块：[LXC-5.0-Pro_Magisk-android24-R5.1.zip](https://github.com/tomxi1997/termux-packages/releases/download/v20/LXC-5.0-Pro_Magisk-android24-R5.1.zip)
 
