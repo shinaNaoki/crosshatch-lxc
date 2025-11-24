@@ -28,7 +28,6 @@ ls -l /dev/dma_heap/system  #(新版，Android 11+)DMA-BUF Heaps，ION的现代�
 ```Plain Text
 # 在末尾添加设备权限:
 # 根据你的设备更改 c 后面的数字部分
-# 请注意，这里均说明的是cgroup v2的配置
 lxc.cgroup2.devices.allow = c 226:0 rwm     # /dev/dri/card0
 lxc.cgroup2.devices.allow = c 226:64 rwm    # /dev/dri/controlD64 此项在你的设备上可能不存在，存在即添加@deepseek
 lxc.cgroup2.devices.allow = c 226:128 rwm   # /dev/dri/renderD128
