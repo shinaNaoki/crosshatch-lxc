@@ -218,10 +218,14 @@ make ARCH=arm64 menuconfig
 
 3. `Device Drivers` → `Staging drivers` → 开启 Qualcomm Atheros CLD WLAN module
 
+<<<<<<< HEAD
 然后参考下图开启配置：
 ![]()
 
 4. 按自己需要开启内核选项
+=======
+4. 按教程补充配置：**[参考链接](https://mp.weixin.qq.com/s?__biz=MzU1NjYyNjA3MQ==&mid=2247485043&idx=1&sn=f0c7f008d27851ee0d88780711eebb21&chksm=fbc37f8bccb4f69d666182c9a22b97dc7776c62fc67303bb08dcf75944e2637649aa2ee66028&mpshare=1&scene=23&srcid=0706c2VKK7bFY5X50Qc7aQEU&sharer_sharetime=1688653779744&sharer_shareid=f3dd87dafbf3fa6c2772d66af5f1c719#rd)**
+>>>>>>> 4ad2edbc8c759234a13614b91a22433612f85608
 
 5. ←→键将光标调整至Save，按回车键保存配置，长按 ESC 退出
 
