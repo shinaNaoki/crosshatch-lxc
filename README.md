@@ -306,7 +306,8 @@ mv -f Image.lz4 kernel
 
 - 启动 LXC 容器后，网络开关可能会出现时开时关的现象，此时可以关闭WiFi开关，随后等待一段时间后再打开WiFi就可以正常使用
 
-
+# 附录
+**使用你安卓上的LXC:**[Usage](./LXC/README.md)
 
 # 参考资料
-## **Android源码定制-编译Pixel3内核解决触摸声音WiFi异常**:[link](https://mp.weixin.qq.com/s?__biz=MzU1NjYyNjA3MQ==&mid=2247485043&idx=1&sn=f0c7f008d27851ee0d88780711eebb21&chksm=fbc37f8bccb4f69d666182c9a22b97dc7776c62fc67303bb08dcf75944e2637649aa2ee66028&mpshare=1&scene=23&srcid=0706c2VKK7bFY5X50Qc7aQEU&sharer_sharetime=1688653779744&sharer_shareid=f3dd87dafbf3fa6c2772d66af5f1c719#rd)
+**Android源码定制-编译Pixel3内核解决触摸声音WiFi异常**:[link](https://mp.weixin.qq.com/s?__biz=MzU1NjYyNjA3MQ==&mid=2247485043&idx=1&sn=f0c7f008d27851ee0d88780711eebb21&chksm=fbc37f8bccb4f69d666182c9a22b97dc7776c62fc67303bb08dcf75944e2637649aa2ee66028&mpshare=1&scene=23&srcid=0706c2VKK7bFY5X50Qc7aQEU&sharer_sharetime=1688653779744&sharer_shareid=f3dd87dafbf3fa6c2772d66af5f1c719#rd)
