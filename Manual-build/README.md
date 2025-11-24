@@ -150,6 +150,7 @@ make ARCH=arm64 menuconfig
 
 配置菜单操作：
 键盘↑↓键选择，空格键切换选项，回车进入选项，双击ESC键返回上一级，←→控制下面一排的选项，"/?"键搜索
+
 `Networking support` → `Networking options` → 开启 IP: tunneling
 
 `Device Drivers` → `Input device support` → Touchscreens → 将 [M] 改为 [*]（LineageOS 内核无需操作）
