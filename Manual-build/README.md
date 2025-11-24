@@ -16,9 +16,6 @@ sudo apt install -y curl llvm lld wget vim git ccache automake flex lzop bison g
 # 克隆内核源码
 git clone --depth 1 --branch lineage-22.2 https://github.com/LineageOS/android_kernel_google_msm-4.9.git crosshatch
 
-~~# 准备mkdtimg工具（手动编译必需，缺失会导致报错）~~
-~~git clone https://github.com/tomxi1997/android-mkdtimg-mkbootimg.git tools~~
-
 # 准备lineageOS的预编译gcc（64位）
 git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 --depth 1 gcc64
 
@@ -205,7 +202,10 @@ make CC=clang ARCH=arm64 SUBARCH=arm64 CROSS_COMPILE=aarch64-linux-android- CROS
 ```
 
 等待编译完成，内核输出路径：`out/arch/arm64/boot/Image.lz4`
-
+<details>
+<summary>展开</summary>
+<p>使用repo获取内核和工具链时，会生成一个名为mkdtimg工具。但在我们的工具链中不存在该工具，所以在编译时会出现缺少该工具导致编译失败，这里我们就选择跳过此部分，也即跳过dtbo的生成</p>
+</details>
 ## 5. 打包boot镜像
 
 本节使用lineageOS-22.2版本的内核，请根据当前系统或内核选择对应的boot.img文件
