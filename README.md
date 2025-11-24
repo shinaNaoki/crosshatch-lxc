@@ -10,7 +10,7 @@
 
 ```Bash
 
-```
+```sudo apt install -y curl llvm lld wget vim git ccache automake flex lzop bison gperf build-essential zip zlib1g-dev g++-multilib libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng maven libssl-dev pwgen libswitch-perl policycoreutils minicom libxml-sax-base-perl libxml-simple-perl bc libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev xsltproc unzip device-tree-compiler kmod python3 python3-pip python-is-python3 lld git wget curl apt-transport-https unzip neovim
 
 ## 3. 准备内核及工具链（使用 repo 工具下载谷歌官方资源）
 
@@ -19,6 +19,7 @@
 ```Bash
 
 ```
+
 
 ### 3.2 安装 repo 工具
 
