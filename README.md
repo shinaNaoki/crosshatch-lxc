@@ -287,11 +287,11 @@ mv -f Image.lz4 kernel
 
 ### 7.1 KernelSU 说明
 
-- 内核版本 4.9 仅支持 KernelSU v0.9.5，你可以使用的APP版本[1.0.1](https://github.com/tiann/KernelSU/releases/download/v1.0.1/)
+- 内核版本 4.9 仅支持 KernelSU v0.9.5，你可以使用的APP版本[1.0.1](https://github.com/tiann/KernelSU/releases/v1.0.1/)
 
 - 我依然建议你使用面具进行管理
 
-### 7.2 LXC（你可以选择tomxi1997大佬的lxc管理模块，或者自行[静态编译lxc（使用musl库）](https://www.bilibili.com/video/BV1veuFzaE8N)）
+### 7.2 LXC（你可以选择tomxi1997大佬的lxc管理模块，或者参考视频自行[静态编译lxc（使用musl库）](https://www.bilibili.com/video/BV1veuFzaE8N)）
 
 - 下载模块：[LXC-5.0-Pro_Magisk-android24-R5.1.zip](https://github.com/tomxi1997/termux-packages/releases/download/v20/LXC-5.0-Pro_Magisk-android24-R5.1.zip)
 
