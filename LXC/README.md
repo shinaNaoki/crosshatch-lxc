@@ -1,4 +1,4 @@
-#一.为LXC容器挂载GPU设备(通用思路)
+# 一.为LXC容器挂载GPU设备(通用思路)
 修改容器的配置文件
 ```Bash
 # 使用adb shell或者终端app
@@ -48,15 +48,15 @@ lxc.mount.entry = /dev/dma_heap/system dev/dma_heap/system none bind,optional,cr
 lxc.mount.entry = /dev/input dev/input none bind,optional,create=dir
 ```
 
-#二.修改tomxi1997的Lxc管理模块的lxc-images镜像地址(默认清华源已经很久未更新)
+# 二.修改tomxi1997的Lxc管理模块的lxc-images镜像地址(默认清华源已经很久未更新)
 mt管理器打开/data/lxc/lxc-manager.c和/data/lxc/lxc-manager.sh，查找mirrors.tuna.tsinghua替换为mirror.nju
 
-#三.有什么用？
+# 三.有什么用？
 ![fastfetch](./fastfetch.png "祖宗之法不可变，fastfetch先")
 搭建Suwayomi-server
 ![Suwayomi-server](./Suwayomi1.png "Suwayomi-server")
 ![Suwayomi局域网访问](./Suwayomi2.png "局域网内访问")
 ![Jellyfin](./Jellyfin.png "😕")
 
-#存在的问题：
+# 存在的问题：
 目前(2025-11-24)，在LXC中无法正常启动Arch Linux ARM(需要你自己修改)
