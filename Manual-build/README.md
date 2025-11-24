@@ -216,7 +216,7 @@ make CC=clang ARCH=arm64 SUBARCH=arm64 CROSS_COMPILE=aarch64-linux-android- CROS
 
 - 下载lineageOS的boot.img
 
-- 参考kernelSU官网教程，以下为具体步骤：
+### 参考kernelSU官网教程，以下为具体步骤：
 
 #### a. 处理Magisk安装包
 
@@ -271,7 +271,7 @@ mv -f Image.lz4 kernel
 
 - 刷入后通过 Termux 或 adb shell 以root身份运行 lxc 命令即可使用
 
-### 7.3 网络问题修复
+### 6.3 网络问题修复
 
 - 启动 LXC 容器后，网络开关可能会出现时开时关的现象，此时可以关闭WiFi开关，随后等待一段时间后再打开WiFi就可以正常使用
 
