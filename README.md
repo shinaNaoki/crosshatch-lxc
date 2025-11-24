@@ -67,7 +67,7 @@ repo sync -c --no-tags -j20     # -j 后面的20改为你的处理器核心数
 cd private/msm-google
 ```
 
-### 4.2 基础配置修改
+### 4.2 去除配置文件检查以使用构建脚本
 
 ```Bash
 nvim build.config.bluecross_no-cfi
