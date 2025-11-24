@@ -30,13 +30,13 @@ git config --global user.name "xxx"
 ### 3.2 安装 repo 工具
 
 ```Bash
-mkdir ~/bin;
-PATH=~/bin:$PATH;
-curl https://mirrors.tuna.tsinghua.edu.cn/git/git-repo > ~/bin/repo;
-chmod +x ~/bin/repo;
+mkdir ~/bin
+PATH=~/bin:$PATH
+curl https://mirrors.tuna.tsinghua.edu.cn/git/git-repo > ~/bin/repo
+chmod +x ~/bin/repo
 
 # 打开repo文件修改内容：
-nvim ~/bin/repo;
+nvim ~/bin/repo
 ```
 
 将 `REPO_URL = 'https://gerrit.googlesource.com/git-repo'` 改为 `REPO_URL = 'https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'`
@@ -98,7 +98,7 @@ nvim drivers/staging/Makefile
 末尾添加：`obj-$(CONFIG_QCA_CLD_WLAN)+= qcacld-3.0/`（LineageOS 内核通常已存在，无需修改）
 
 
-将private/msm-google-modules/wlan/下的三个目录复制到private/msm-google/drivers/staging/目录下
+将**private/msm-google-modules/wlan/**下的三个目录复制到**private/msm-google/drivers/staging/**目录下
 ```Bash
 cp -r ~/crosshatch/private/msm-google-modules/wlan/* ~/crosshatch/private/msm-google/drivers/staging/
 ```
@@ -180,7 +180,7 @@ git apply ./path_umount.patch
 ```
 
 ### 4.6 添加 LXC/Docker 支持
-使用了 [tomxi1997](http://www.coolapk.com/u/25509431) 的一键配置，你也可以自行在配置文件中添加选项
+使用了 [tomxi1997](http://www.coolapk.com/u/25509431)大佬 的一键配置，你也可以自行在配置文件中添加选项
 ```Bash
 git clone https://github.com/tomxi1997/lxc-docker-support-for-android.git utils
 # 修改Kconfig
@@ -211,14 +211,17 @@ make ARCH=arm64 menuconfig
 ```
 
 配置菜单操作：
-键盘↑↓键选择，空格键切换选项，回车进入，双击ESC键返回上一级，←→控制下面一排的选择，"/?"键搜索
+键盘↑↓键选择，空格键切换选项，回车进入选项，双击ESC键返回上一级，←→控制下面一排的选项，"/?"键搜索
 1. `Networking support` → `Networking options` → 开启 IP: tunneling
 
 2. `Device Drivers` → `Input device support` → Touchscreens → 将 [M] 改为 [*]（LineageOS 内核无需操作）
 
 3. `Device Drivers` → `Staging drivers` → 开启 Qualcomm Atheros CLD WLAN module
 
-4. 按教程补充配置：[参考链接](https://mp.weixin.qq.com/s?__biz=MzU1NjYyNjA3MQ==&mid=2247485043&idx=1&sn=f0c7f008d27851ee0d88780711eebb21&chksm=fbc37f8bccb4f69d666182c9a22b97dc7776c62fc67303bb08dcf75944e2637649aa2ee66028&mpshare=1&scene=23&srcid=0706c2VKK7bFY5X50Qc7aQEU&sharer_sharetime=1688653779744&sharer_shareid=f3dd87dafbf3fa6c2772d66af5f1c719#rd)
+然后参考下图开启配置：
+![]()
+
+4. 按自己需要开启内核选项
 
 5. ←→键将光标调整至Save，按回车键保存配置，长按 ESC 退出
 
@@ -231,6 +234,7 @@ make ARCH=arm64 savedefconfig
 cp defconfig arch/arm64/configs/b1c1_defconfig
 rm .config
 ```
+此时可以重新生成配置文件打开配置菜单，查看刚刚打开的选项是否成功保存，这里不赘述
 
 ## 5. 编译内核
 
@@ -280,8 +284,7 @@ mv -f Image.lz4 kernel
 ./magiskboot repack boot.img
 # 此时你会得到一个 new-boot.img 的文件，使用这个文件 fastboot 刷入设备即可
 ```
-
-- 生成新镜像：`new-boot.img`（可先临时启动验证，再正式刷入）
+- 生成新镜像：`new-boot.img`（可以先临时启动boot,查看内核标识是否是你自定义的，然后确认功能无误后刷入）
 
 ## 7. 后续配置
 
@@ -291,7 +294,7 @@ mv -f Image.lz4 kernel
 
 - 我依然建议你使用面具进行管理
 
-### 7.2 LXC（你可以选择tomxi1997大佬的lxc管理模块，或者参考视频自行[静态编译lxc（使用musl库）](https://www.bilibili.com/video/BV1veuFzaE8N)）
+### 7.2 LXC（你可以选择tomxi1997大佬的lxc管理模块，或者参考视频自行**[静态编译lxc（使用musl库）](https://www.bilibili.com/video/BV1veuFzaE8N)**）
 
 - 下载模块：[LXC-5.0-Pro_Magisk-android24-R5.1.zip](https://github.com/tomxi1997/termux-packages/releases/download/v20/LXC-5.0-Pro_Magisk-android24-R5.1.zip)
 
