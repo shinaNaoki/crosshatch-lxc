@@ -206,6 +206,7 @@ make CC=clang ARCH=arm64 SUBARCH=arm64 CROSS_COMPILE=aarch64-linux-android- CROS
 <summary>展开</summary>
 <p>使用repo获取内核和工具链时，会生成一个名为mkdtimg工具。但在我们的工具链中不存在该工具，所以在编译时会出现缺少该工具导致编译失败，这里我们就选择跳过此部分，也即跳过dtbo的生成</p>
 </details>
+
 ## 5. 打包boot镜像
 
 本节使用lineageOS-22.2版本的内核，请根据当前系统或内核选择对应的boot.img文件
