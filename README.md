@@ -98,7 +98,7 @@ nvim drivers/staging/Makefile
 末尾添加：`obj-$(CONFIG_QCA_CLD_WLAN)+= qcacld-3.0/`（LineageOS 内核通常已存在，无需修改）
 
 
-将**private/msm-google-modules/wlan/**下的三个目录复制到**private/msm-google/drivers/staging/**目录下
+将**private/msm-google-modules/wlan/**下的三个目录复制到**private/msm-google/drivers/staging/**目录下（在**LineageOS的内核源码**中，这些文件可能已经存在，你可以先`ls -l drivers/staging/`查看）
 ```Bash
 cp -r ~/crosshatch/private/msm-google-modules/wlan/* ~/crosshatch/private/msm-google/drivers/staging/
 ```
