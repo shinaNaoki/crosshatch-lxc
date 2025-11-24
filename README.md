@@ -15,6 +15,8 @@ sudo apt install -y curl llvm lld wget vim git ccache automake flex lzop bison g
 
 ## 3. 准备内核及工具链（使用 repo 工具下载谷歌官方资源）
 
+> 如果你想要手动编译内核，请参考[此处](./Manual-build/README.md)
+
 ### 3.1 创建目录
 
 ```Bash
