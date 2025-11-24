@@ -41,11 +41,12 @@ lxc.cgroup2.devices.allow = c 248:1 rwm     # /dev/dma_heap/system
 # 挂载设备:
 lxc.mount.entry = /dev/dri dev/dri none bind,optional,create=dir
 lxc.mount.entry = /dev/kgsl-3d0 dev/kgsl-3d0 none bind,optional,create=file
+lxc.mount.entry = /dev/input dev/input none bind,optional,create=dir
 #在我的Pixel 3XL上
 lxc.mount.entry = /dev/ion dev/ion none bind,optional,create=file
+
 #在我的Redmi K50 Ultra上
 lxc.mount.entry = /dev/dma_heap/system dev/dma_heap/system none bind,optional,create=file
-lxc.mount.entry = /dev/input dev/input none bind,optional,create=dir
 ```
 
 # 二.修改tomxi1997的Lxc管理模块的lxc-images镜像地址(默认清华源已经很久未更新)
