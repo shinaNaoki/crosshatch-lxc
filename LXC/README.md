@@ -59,5 +59,6 @@ mt管理器打开/data/lxc/lxc-manager.c和/data/lxc/lxc-manager.sh，查找mirr
 ![Jellyfin](./Jellyfin.png "😕")
 
 # ~~存在的问题：~~
-~~目前(2025-10-15)，在LXC中无法正常启动Arch Linux ARM(需要你自己修改)~~
+~~目前，在LXC中无法正常启动Arch Linux ARM(需要你自己修改)~~
+现在，你可以正常地运行Arch Linux ARM
 
