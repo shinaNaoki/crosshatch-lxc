@@ -219,9 +219,9 @@ make ARCH=arm64 menuconfig
 3. `Device Drivers` → `Staging drivers` → 开启 Qualcomm Atheros CLD WLAN module
 
 然后参考下图开启配置：
-![](https://raw.githubusercontent.com/shinaNaoki/crosshatch-lxc/main/images/1.png)
-![](https://raw.githubusercontent.com/shinaNaoki/crosshatch-lxc/main/images/2.png)
-![](https://raw.githubusercontent.com/shinaNaoki/crosshatch-lxc/main/images/3.png)
+![](./images/1.png)
+![](./images/2.png)
+![](./images/3.png)
 
 4. 按自己需要开启内核选项
 
