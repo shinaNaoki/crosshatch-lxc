@@ -56,6 +56,7 @@ mt管理器打开/data/lxc/lxc-manager.c和/data/lxc/lxc-manager.sh，查找mirr
 搭建Suwayomi-server
 ![Suwayomi-server](./Suwayomi1.png "Suwayomi-server")
 ![Suwayomi局域网访问](./Suwayomi2.png "局域网内访问")
+搭建Jellyfin ~~(真的有必要吗)~~
 ![Jellyfin](./Jellyfin.png "😕")
 
 # ~~存在的问题：~~
