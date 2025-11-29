@@ -170,7 +170,7 @@ make ARCH=arm64 menuconfig
 
 ```Bash
 # 首先备份b1c1_defconfig
-cp b1c1_defconfig b1c1_defconfig_backup
+cp arch/arm64/configs/b1c1_defconfig arch/arm64/configs/b1c1_defconfig_backup
 make ARCH=arm64 savedefconfig
 cp defconfig arch/arm64/configs/b1c1_defconfig
 rm .config
